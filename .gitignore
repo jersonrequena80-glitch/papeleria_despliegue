@@ -12,3 +12,4 @@ Thumbs.db
 # Archivos de registro de errores (Logs)
 *.log
 npm-debug.log*
+/nbproject/private/
