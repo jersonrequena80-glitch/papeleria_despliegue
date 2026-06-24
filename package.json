@@ -1,0 +1,16 @@
+{
+  "name": "papeleria-online-despliegue",
+  "version": "1.0.0",
+  "description": "Sistema Full-Stack para la Papelería Online",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Jerson Andres Requena Pava",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}

@@ -1,0 +1,14 @@
+# Dependencias de Node.js (Pesa demasiado y nunca se sube)
+node_modules/
+
+# Archivo de variables de entorno (Contiene tus contraseñas secretas)
+.env
+
+# Archivos de configuración del sistema operativo o editores
+.DS_Store
+.vscode/
+Thumbs.db
+
+# Archivos de registro de errores (Logs)
+*.log
+npm-debug.log*
