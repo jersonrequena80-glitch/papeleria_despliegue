@@ -5,6 +5,7 @@ const productsContainer = document.getElementById('products-container');
 const cartSidebar = document.getElementById('cart-sidebar');
 const sidebarOverlay = document.getElementById('sidebar-overlay');
 const openCartBtn = document.getElementById('open-cart-btn');
+const heroCartBtn = document.getElementById('hero-cart-btn');
 const closeCartBtn = document.getElementById('close-cart-btn');
 const cartItemsContainer = document.getElementById('cart-items-container');
 const cartCount = document.getElementById('cart-count');
@@ -90,10 +91,19 @@ function actualizarInterfazCarrito() {
   cartTotal.innerText = `$${sumaTotal.toLocaleString('es-CO')}`;
 }
 
-openCartBtn.addEventListener('click', () => {
+const abrirCarrito = () => {
   cartSidebar.classList.add('open');
   sidebarOverlay.classList.add('active');
-});
+};
+
+openCartBtn.addEventListener('click', abrirCarrito);
+
+if (heroCartBtn) {
+  heroCartBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    abrirCarrito();
+  });
+}
 
 const cerrarMenu = () => {
   cartSidebar.classList.remove('open');
